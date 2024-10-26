@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaaro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="nav-logo" href="#"><img src="./logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto mb-2 mb-lg-0" id="a">
+                        <a class="nav-link active me-3" aria-current="page" href="home.html">HOME</a>
+                        <a class="nav-link me-3" href="#about">ABOUT</a>
+                        <a class="nav-link me-3" href="#products">PRODUCTS</a>
+                        <a class="nav-link me-3" href="#recipies">RECIPES</a>
+                        <a class="nav-link me-3" href="#partner">PARTNER WITH US</a>
+                        <a class="nav-link me-3" href="#team">OUR TEAM</a>
+                        <a class="nav-link me-3" href="#contact">CONTACTS</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Video Section -->
+    <section> 
+        <video src="homevid.mp4" autoplay muted loop playsinline disablePictureInPicture></video>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h1 class="text-center mb-4">About Us</h1>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>Welcome to Bazaaro!</h2>
+                <p>We offer innovative products and delicious recipes to enhance your lifestyle and inspire every meal.</p>
+                <p>Our products are designed for quality and simplicity, while our recipes focus on fresh ingredients and easy-to-follow steps. We value sustainability, community, and creating meaningful moments whether it’s with the perfect product or a flavorful dish.</p>
+                <p>Explore, create, and enjoy with us!</p>
+            </div>
+            <div class="col-md-6">
+                <div class="flip-card" id="flipCard">
+                    <div class="flip-card-inner" id="flipCardInner">
+                        <div class="flip-card-front">
+                            <img src="about1.jpg" alt="About Us Image 1" class="img-fluid rounded">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="about2.jpg" alt="About Us Image 2" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/afbea1b48a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        const flipCardInner = document.getElementById('flipCardInner');
+        setInterval(() => {
+            flipCardInner.classList.toggle('flip-animation');
+        }, 3000); 
+    </script>
+</body>
+</html>
