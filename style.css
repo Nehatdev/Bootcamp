@@ -522,16 +522,16 @@ video {
 
 }
 .items:first-of-type{
-    background-image: url(./img5.jpeg);
+    background-image: url(./images/img5.jpeg.jpg);
 }
 .items:nth-of-type(2){
-    background-image: url(./img6.jpeg);
+    background-image: url(./images/img6.jpeg.jpg);
 }
 .items:nth-of-type(3){
-    background-image: url(./img7.jpeg);
+    background-image: url(./images/img7.jpeg.jpg);
 }
 .items:nth-of-type(4){
-    background-image: url(./img8.jpeg);
+    background-image: url(./images/img8.jpeg.jpg);
     padding-top: 24%;
 }
 
